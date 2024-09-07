@@ -5,52 +5,51 @@ Written in Verilog 2001, and implemented on an ARTIX-7 FPGA (Nexys A7 Developmen
 
 ## Topics Covered:
 
-### Guidelines
+### [Guidelines](./Learning%20Modules)
 - Verilog Testbench Guidelines
 - Blocking & Non-Blocking Assignments
 - Verilog Behavioural Modelling Guidelines
 - Routing Networks
 - Inferred Latches
+- Clock Skew
+- Vivado's Clocking Wizard
 
-### Arithmetic Circuits
+### [Arithmetic Circuits](./Arithmetic%20Circuits)
 - Adders
 - Subtractors
 - Signed & Arithmetic Overflow
 - Binary Representation in Verilog
 
-### Combinational Logic
+### [Combinational Logic](./)
 - Multplexers
 - Decoders
 - Encoders
 - Code Converters
 
 
-### Registers in Verilog
+### [Registers in Verilog](./Registers)
 - Flip-Flops
 - Latches
 - Shift Registers
 - LFSRs
 - Synchronizers
 
-### Counters
+### [Counters](./Counters)
 - Asynchronous Counters
 - Synchronous Counters
 - Timers
 - T Flip Flops
 
-### Pulse Width Modulation (PWM) Design
+### [Pulse Width Modulation (PWM) Design](./PWM)
 - Duty Cycle Using Timers & Counters
 
-### FSMs from State Diagrams
+### [FSMs from State Diagrams](./Finite%20State%20Machines)
 - ASM Charts
 - Debouncing & Edge Detection
 - Swapping Memory Locations
 - Traffic Controller 
 
-### Clock Skew
-- Vivado's Clocking Wizard
-
-### Memory 'Arrays'
+### [Memory 'Arrays'](./Memory)
 - BRAM
 - Synch./Asynch. RAM
 - ROM
