@@ -42,7 +42,7 @@ Written in Verilog 2001, and implemented on an ARTIX-7 FPGA (Nexys A7 Developmen
 - [T Flip Flops](/T%20Flip%20Flop)
 
 ### [Pulse Width Modulation (PWM) Design](./PWM)
-- Duty Cycle Using Timers & Counters
+- Duty Cycle Implemented Through Timers & Counters
 - [Driving RGB LEDs Using PWM](./RGB%20LED%20Driver)
 
 ### [FSMs from State Diagrams](./Finite%20State%20Machines)
