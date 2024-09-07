@@ -1,5 +1,6 @@
 # **Digital Design**
 Documenting my learning journey of HDL and digital design.
+
 This repository contains annotated modules covering the fundamental concepts in digital design. 
 Written in Verilog 2001, and implemented on an ARTIX-7 FPGA (Nexys A7 Development Board).
 
