@@ -38,7 +38,7 @@ Written in Verilog 2001, and implemented on an ARTIX-7 FPGA (Nexys A7 Developmen
 - Asynchronous Counters
 - Synchronous Counters
 - Timers
-- [T Flip Flops](/.T%20Flip%20Flop)
+- [T Flip Flops](/T%20Flip%20Flop)
 
 ### [Pulse Width Modulation (PWM) Design](./PWM)
 - Duty Cycle Using Timers & Counters
@@ -55,7 +55,7 @@ Written in Verilog 2001, and implemented on an ARTIX-7 FPGA (Nexys A7 Developmen
 - Synch./Asynch. RAM
 - ROM
 - BRAM Macro Cells for Synch. ROM
-- [FIFO Templates](/.FIFO%20Template)
+- [FIFO Templates](/FIFO%20Template)
 
 
 ### [UART with FIFO Buffers](./UART)
