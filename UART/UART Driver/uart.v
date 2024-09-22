@@ -68,17 +68,19 @@ module uart
    );
                                                     //FIFO for Rx   
                                                 
-   fifo_generator_0 rx_FIFO 
-   (
-      .clk(clk),      // input wire clk
-      .srst(~reset_n),    // input wire srst
-      .din(rx_dout),      // input wire [7 : 0] din
-      .wr_en(rx_done_tick),  // input wire wr_en
-      .rd_en(rd_uart),  // input wire rd_en
-      .dout(r_data),    // output wire [7 : 0] dout
-      .full(),    // output wire full
-      .empty(rx_empty)  // output wire empty
-   ); 
+   fifo #(
+    .ADDR_WIDTH(1),    // Specify address width
+    .DATA_WIDTH(8)     // Specify data width
+) fifo_inst (
+    .clk(clk),         // Clock signal
+    .reset(~reset_n),     // Reset signal
+    .w_data(rx_dout),   // Write data input
+    .r_data(r_data),   // Read data output
+    .wr(rx_done_tick),           // Write enable
+    .rd(rd_uart),           // Read enable
+    .full(),       // FIFO full output
+    .empty(rx_empty)      // FIFO empty output
+);    
    
                                                     //Transmitter   
    
@@ -98,17 +100,18 @@ module uart
    
                                                     //FIFO for Tx   
                                                 
-   fifo_generator_0 tx_FIFO 
-   (
-      .clk(clk),      // input wire clk
-      .srst(~reset_n),    // input wire srst
-      .din(w_data),      // input wire [7 : 0] din
-      .wr_en(wr_uart),  // input wire wr_en
-      .rd_en(tx_done_tick),  // input wire rd_en
-      .dout(tx_din),    // output wire [7 : 0] dout
-      .full(tx_full),    // output wire full
-      .empty(tx_fifo_empty)  // output wire empty
-   ); 
-   
+   fifo #(
+    .ADDR_WIDTH(1),    // Specify address width
+    .DATA_WIDTH(8)     // Specify data width
+) fifo_inst (
+    .clk(clk),         // Clock signal
+    .reset(~reset_n),     // Reset signal
+    .w_data(w_data),   // Write data input
+    .r_data(tx_din),   // Read data output
+    .wr(wr_uart),           // Write enable
+    .rd(tx_done_tick),           // Read enable
+    .full(tx_full),       // FIFO full output
+    .empty(tx_fifo_empty)      // FIFO empty output
+);
                                                                                  
 endmodule
