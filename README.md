@@ -61,7 +61,7 @@ Towards the end, you can find a UART demo.
 - [FIFO Templates](/FIFO%20Template)
 
 
-### [UART with FIFO Buffers](./UART)
+### [UART with FIFO Buffers](./UART/UART%20TDemo)
 - Baudrate Generator
 - Receiver
 - Transmitter
