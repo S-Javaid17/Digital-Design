@@ -31,7 +31,7 @@ module rca_nbit
     
     wire [n : 0] c; // Internal nodes which will transmit the carry out + the carry_out, thuse its n:0
     assign c[0] = c_in; // BUT, the very first carry is c_in, so we specify it here, just renaming it
-    assign c[n] = c_out; // Same idea as above
+    assign c_out = c[n]; // Same idea as above
  //How can one instantiate n full bit adders?
  //Use "generate .... endgenerate", used for replicating HW structures
      generate
